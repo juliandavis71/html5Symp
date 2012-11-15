@@ -1,0 +1,397 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>HTML5 and PhoneGap</title>
+
+		<meta name="description" content="An introduction to HTML5 and PhoneGap">
+		<meta name="author" content="Julian Davis">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/theme/swsi.css" id="theme">
+                <!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                
+                
+		<script>
+			// If the query includes 'print-pdf' we'll use the PDF print sheet
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+                
+               
+	</head>
+	
+	<body>
+            <div id="swsi_logo"></div>
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+                    <section>
+                        Follow this presentation at 
+                        <a href="http://html5symp.jit.su">http://html5symp.jit.su</a>
+                       </section> 
+
+                            <section>
+					<h2>Developing native Apps using HTML5 and PhoneGap </h2>
+                                        
+                                        <img src="images/HTML5logo.png" width="300" alt="HTML5" />
+                                        <img src="images/phonegaplogo.png" width="300" alt="PhoneGap" />
+                                        
+                                        
+                            </section>
+				<section>
+					<h2>What I'll be talking about</h2>
+					
+                                        <ul>
+                                            <li >Different types of Apps</li>
+                                            <li >Introduction to SWSi Win Win Project</li>
+                                            <li >Advantages of PhoneGap</li>
+                                            <li >Disadvantages of PhoneGap</li>
+                                            <li >Demo</li>
+                                            
+                                        </ul>
+				</section>
+				
+				<section>
+					<h2>Different types of Apps</h2>
+                                        <ul>
+                                            <li style="list-style:none;padding:4px;"><h4>Native Apps</h4>
+                                                <ul>
+                                                    <li>Designed for specific platform with the platform SDK</li>
+                                                    <li>Designed to work with the hardware</li>
+                                                </ul>
+                                            
+                                            </li>
+                                        </ul>
+                                </section>
+				
+				<section>
+					<h2>Different types of Apps</h2>
+                                        <ul>
+                                            <li  style="list-style:none;padding:4px;margin-top:5px"><h4>Web / Mobile Apps</h4>
+                                                <ul>
+                                                    <li>Browser based</li>
+                                                    <li>Not OS dependant</li>
+                                                    <li>Combines Web based technologies (HTML5, CSS & Javascript)</li>
+                                                    <li>Can include Server Side Scripting</li>
+                                                    
+                                                </ul>
+                                            </li>
+                                </section>
+				
+				<section>
+					<h2>Different types of Apps</h2>
+                                                <ul>
+                                            <li  style="list-style:none;padding:4px;margin-top:5px"><h4>Hybrid Apps</h4>
+                                                <ul>
+                                                    
+                                                     <li>Combines Web based technologies (HTML5, CSS & Javascript)</li>
+                                                    <li>Run inside a container and use the device's browser engine</li>
+                                                    <li>A layer allows access to devices capabilites like camera, accelerometer etc (native APIs)</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                       
+                                        <p class="reference">
+                                        
+                                            <a href="http://icenium.com/community/blog/icenium-team-blog/2012/06/14/what-is-a-hybrid-mobile-app-" target="_blank">Sourced from http://icenium.com/community/blog/icenium-team-blog/2012/06/14/what-is-a-hybrid-mobile-app-</a>
+                                            
+                                        </p>
+					<aside class="notes">
+						Hybrid, by definition is anything derived from heterogeneous sources, or 
+                                                composed of elements of different or incongruous kinds. A hybrid app is one that 
+                                                is written with the same technology used for websites and mobile web implementations, and that is hosted or runs inside a native 
+                                                container on a mobile device. It is the marriage of web technology and native execution.
+					</aside>
+				</section>
+				
+				
+                               
+				<section>
+						<h2>Introduction to SWSi Win Win Project</h2>
+                                                <img src="images/winwin.png" alt="Win Win"/>
+                                                <p >
+                                                    I was asked to be involved in a pilot project to create a simple CMS that would a repository for content that <i>may</i> be accessible from a mobile (read Apple).
+                                                </p>
+                                                <div style="height:20px"></div>
+                                                <p >
+                                                    With not having a lot of Objective-C experience, I looked to PhoneGap as a solution. 
+                                                </p>
+                                                
+                                                <aside class="notes">
+                                                    What we did
+                                                </aside>
+                                </section>
+                                <section>
+						<h2>Introduction to SWSi Win Win Project</h2>
+                                                
+                                                <p>
+                                                    <a rel="external" target="_blank" href="images/winwinoverview.jpg"><img src="images/winwinoverview.jpg" alt="Win Win Overview" height="680" style="margin-top:-10px"/></a>
+                                                    
+                                                </p>
+                                                
+                                                <aside class="notes">
+                                                    What we did
+                                                </aside>
+                                </section>
+                            <section>    
+                            <section>
+						<h2>Introduction to SWSi Win Win Project</h2>
+                                                <p>Using HTML5 / CSS5 / JQueryMobile the App was built for:</p>
+                                
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+					
+                            </section>
+                                <section>
+                                    <h2>Introduction to SWSi Win Win Project</h2>
+                                    <h3>Mobile</h3>
+                                                    <a rel="external" target="_blank" href="images/splash_mobile.png">
+                                                        <img src="images/splash_mobile.png" alt="Mobile"/></a>
+                                                   
+                                                </section>    
+                                                <section>
+                                                    <h2>Introduction to SWSi Win Win Project</h2>
+                                                    <h3>iPhone</h3>
+                                                    <a rel="external" target="_blank" href="images/splash_iphone.png">
+                                                        <img src="images/splash_iphone.png" alt="iPhone"/></a>
+                                                    
+                                                </section>    
+                                                <section>
+                                                    <h2>Introduction to SWSi Win Win Project</h2>
+                                                    <h3>iPad</h3>
+                                                    <a rel="external" target="_blank" href="images/splash_ipad.png">
+                                                        <img src="images/splash_ipad.png" alt="iPad" /></a>
+                                                 </section>
+                                   
+                            </section>
+                             <section >
+                                        	<h2>So what is PhoneGap?</h2>
+                                                <blockquote cite="http://en.wikipedia.org/wiki/PhoneGap">
+                                                   PhoneGap is an open source framework for quickly building cross-platform mobile apps using HTML5, Javascript and CSS.
+                                                </blockquote>
+                                                <img src="images/Build-Diagram-3.png" alt="PhoneGap"/>
+                             </section>                   
+                                <section>
+                                        	<h2>Advantages of PhoneGap</h2>
+                                                <ul>
+                                                    <li >Improved development time</li>
+                                                    <li >Single Codebase</li>
+                                                    <li >Small learning curve for web developers improving rapid deployment of apps</li>
+                                                    <li >Access to most native device capabilities</li>                                                    
+                                                    <li >Large community base and growing</li>
+                                                    <li >Approved by Apple!</li>
+                                                </ul>
+                                               <aside class="notes">
+                                                    What we did
+                                                </aside>	
+                                        
+                                </section>
+                                <section>
+                                        	<h2>Disadvantages of PhoneGap</h2>
+                                                <ul>
+                                                    <li >Can be slower than native code</li>
+                                                    <li >Limited to Javascript for UI features</li>
+                                                    <li >Won't always support new device features</li>
+                                                </ul>
+                                               <aside class="notes">
+                                                    What we did
+                                                </aside>	
+                                        
+                                </section>
+        
+                              <section>
+                                <h1>DEMO</a>
+                              </section>  
+				<section>
+				    <h2>Demo</h2>
+                                        <p >
+                                           I have a simple HTML5, CSS3 and JqueryMobile page that returns a feed from Twitter based on a search term.
+                                          
+                                       </p>
+                                       <p style="height:20px;"></p>
+                                       <p> From a Mobile device, visit <br/><a href="http://www.juliandavis.com/JQMTwitter" target="_blank">http://www.juliandavis.com/JQMTwitter</a> <br/>
+                                           to view the site from a mobile browser.
+                                        
+				</section>
+                            <section >
+				    <h2>Demo</h2>
+                                        <p>
+                                           Using the same files downloaded in the previous slide, and only adding the following PhoneGap Javscript:</p>
+                                        <section data-markdown>
+                                        <pre >
+                                        <code contenteditable style='text-align:left'>
+                                            &lt;script type="text/javascript" src="cordova-2.1.0.js"&gt;&lt;/script&gt;
+                                            &lt;script type="text/javascript" src="js/index.js"&gt;&lt;/script&gt;
+                                            &lt;script type="text/javascript">
+                                                app.initialize();
+                                                &lt;/script&gt;					
+
+                                        </code>
+                                        </pre>
+                                        </section>
+				</section>
+                                
+                                <section>
+					<h2>&lt;thank you/&gt;</h2>
+					<h3><a href="https://github.com/hakimel" target="_blank">CSS Slide Show is called Reveal.js</a></h3>
+
+                                        <p>Images from <a href="http://www.w3.org/html/logo/" target="_blank" >W3C</a>, 
+                                            <a href="http://www.phonegap.com" target="_blank">PhoneGap</a></p>
+                                         
+                                         <p>A massive thanks to Adam Ahmed for assistance with getting the Node Multiplex running!
+                                           </p>
+                                         
+                                           <p>
+                                             <a href="http://www.twitter.com/hitsthings" target="_blank">Follow Adam on Twitter @hitsthings</a>
+                                         
+                                         </p>
+                                        
+                                        <p>
+                                            <a href="http://www.twitter.com/juliandavis71" target="_blank">
+                                                Follow me on Twitter @juliandavis71</a>
+                                        </p>
+                                        
+				
+                                </section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		
+                
+                <script>
+			var multiplex = {
+				id: "db51f2cf12e12480"
+				, secret: null
+				, url: 'html5symp.jit.su'
+			};
+
+			var notes = false;
+
+			head.ready( function() {
+
+				// Fires when a slide with data-state=customevent is activated
+				Reveal.addEventListener( 'customevent', function() {
+					console.log( '"customevent" has fired' );
+				} );
+
+				// Fires each time a new slide is activated
+				Reveal.addEventListener( 'slidechanged', function( event ) {
+					// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+				} );
+
+				// Full list of configuration options available here:
+				// https://github.com/hakimel/reveal.js#configuration
+				Reveal.initialize({
+					controls: true,
+					progress: true,
+					history: true,
+
+					theme: Reveal.getQueryHash().theme || 'default', // default/neon/beige
+					transition: Reveal.getQueryHash().transition || 'default' // default/cube/page/concave/linear(2d)
+				});
+
+				// Load highlight.js for syntax highlighting of code samples
+				head.js( 'lib/js/highlight.js', function() { 
+					hljs.initHighlightingOnLoad(); 
+				} );
+
+			} );
+
+			// Scripts that should be loaded before initializing
+			var scripts = [];
+
+			// If the browser doesn't support classList, load a polyfill
+			if( !document.body.classList ) {
+				head.js( 'lib/js/classList.js' );
+			}
+
+			// Load markdown parser if there are slides defined using markdown
+			if( document.querySelector( '[data-markdown]' ) ) {
+				scripts.push( 'lib/js/showdown.js' );
+				scripts.push( 'lib/js/data-markdown.js' );
+			}
+
+			scripts.push( 'js/reveal.js' );
+
+			// If we're runnning the notes server we need to include some additional JS
+			// TODO Is there a better way to determine if we're running the notes server?
+			if( window.location.host === 'localhost:1947' || notes === true) {
+				scripts.push( 'socket.io/socket.io.js' );
+				scripts.push( 'plugin/speakernotes/client.js' );
+			}
+
+			if( multiplex.id !== null ) {
+				scripts.push( 'socket.io/socket.io.js' );
+				scripts.push( 'plugin/multiplex/client.js' );
+
+				if( multiplex.secret !== null ) {
+					scripts.push( 'plugin/multiplex/master.js' );
+				}
+			}
+
+			// Load the scripts and, when completed, initialize reveal.js
+			head.js.apply( null, scripts );
+
+		</script>
+
+                
+                
+                
+                <!--<script src="js/reveal.min.js"></script>-->
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			/*Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.search === 'speaker=true'; } },
+                                        { src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
+				    
+                                ]
+			});
+			*/
+		</script>
+
+	</body>
+</html>

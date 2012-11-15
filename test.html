@@ -1,0 +1,23 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+         <script src="/socket.io/socket.io.js"></script>
+                <script>
+                var socket = io.connect('http://localhost/HTML5PhoneGap');
+                socket.on('news', function (data) {
+                    console.log(data);
+                    socket.emit('my other event', { my: 'data' });
+                });
+                </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
